@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 0;
+}
+
+.timetable-container {
+    max-width: 100%;
+    overflow-x: auto;        /* allows horizontal scroll on very small screens */
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Table fixes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;     /* forces equal column sizes */
+    word-wrap: break-word;   /* wraps long words */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    word-break: break-word;   /* ensures text never overflows */
+}
+
+/* Header styling */
+th {
+    background: #333;
+    color: white;
+    font-size: 13px;
+}
+
+/* Day column styling */
+td:first-child {
+    font-weight: bold;
+    background: #f0f0f0;
+}
+
+tr:nth-child(even) td:first-child {
+    background: #e6e6e6;
+}
+
+p{
+    font-size: small;
+}
+
+/* 🔥 Mobile styles */
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 18px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    th, td {
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .timetable-container {
+        padding: 10px;
+    }
+}
