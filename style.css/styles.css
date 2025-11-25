@@ -7,7 +7,7 @@ body {
 
 .timetable-container {
     max-width: 100%;
-    overflow-x: auto;        /* allows horizontal scroll on very small screens */
+    overflow-x: auto;
     background: white;
     padding: 15px;
     border-radius: 10px;
@@ -24,8 +24,8 @@ h2 {
 table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed;     /* forces equal column sizes */
-    word-wrap: break-word;   /* wraps long words */
+    table-layout: fixed;
+    word-wrap: break-word;
 }
 
 th, td {
@@ -33,7 +33,7 @@ th, td {
     padding: 8px;
     text-align: center;
     font-size: 14px;
-    word-break: break-word;   /* ensures text never overflows */
+    word-break: break-word;
 }
 
 /* Header styling */
@@ -58,7 +58,7 @@ summary {
     font-size: 16px;
 }
 
-p{
+p {
     font-size: small;
 }
 
@@ -67,6 +67,8 @@ p{
 
     .timetable-container {
         padding: 10px;
+        transform: scale(1.06);               /* enlarge table area */
+        transform-origin: top center;
     }
 
     table {
@@ -74,6 +76,7 @@ p{
         overflow-x: auto;
         white-space: nowrap;
         font-size: 12px;
+        min-height: 300px;                    /* more height */
     }
 
     th, td {
@@ -101,13 +104,19 @@ p{
         line-height: 1.4;
     }
 
-    th, td {
-        padding: 5px;
-        font-size: 11px;
+    .timetable-container {
+        transform: scale(1.12);               /* even bigger on small phones */
+        transform-origin: top center;
     }
 
     table {
         font-size: 11px;
+        min-height: 340px;                    /* makes table feel bigger */
+    }
+
+    th, td {
+        padding: 9px 8px;                     /* bigger tap targets */
+        font-size: 12.5px;
     }
 
     /* Give sections breathing room */
@@ -120,5 +129,5 @@ p{
         margin-top: 5px;
         margin-bottom: 10px;
     }
-
 }
+
