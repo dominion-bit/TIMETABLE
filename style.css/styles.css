@@ -99,9 +99,12 @@ p {
         font-size: 18px;
     }
 
-    p, summary, li {
+    p, li {
         font-size: 11px;
         line-height: 1.4;
+    }
+    summary {
+        font-size: 20px;
     }
 
     .timetable-container {
@@ -130,6 +133,7 @@ p {
         margin-bottom: 10px;
     }
 }
+
 
 
 
