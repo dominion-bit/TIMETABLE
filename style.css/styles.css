@@ -53,6 +53,11 @@ tr:nth-child(even) td:first-child {
     background: #e6e6e6;
 }
 
+summary {
+    cursor: pointer;
+    font-size: 16px;
+}
+
 p{
     font-size: small;
 }
@@ -89,3 +94,4 @@ p{
         padding: 10px;
     }
 }
+
