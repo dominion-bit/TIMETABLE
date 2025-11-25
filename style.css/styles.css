@@ -55,7 +55,7 @@ tr:nth-child(even) td:first-child {
 
 summary {
     cursor: pointer;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 p {
@@ -76,11 +76,11 @@ p {
         overflow-x: auto;
         white-space: nowrap;
         font-size: 12px;
-        min-height: 300px;                    /* more height */
+        min-height: 280px;                    /* more height */
     }
 
     th, td {
-        padding: 6px;
+        padding: 8px;
         text-align: left;
     }
 
@@ -96,7 +96,7 @@ p {
 @media (max-width: 480px) {
 
     h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     p, summary, li {
@@ -111,11 +111,11 @@ p {
 
     table {
         font-size: 11px;
-        min-height: 340px;                    /* makes table feel bigger */
+        min-height: 320px;                    /* makes table feel bigger */
     }
 
     th, td {
-        padding: 9px 8px;                     /* bigger tap targets */
+        padding: 12px 11px;                     /* bigger tap targets */
         font-size: 12.5px;
     }
 
@@ -130,5 +130,6 @@ p {
         margin-bottom: 10px;
     }
 }
+
 
 
