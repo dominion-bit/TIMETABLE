@@ -55,7 +55,7 @@ tr:nth-child(even) td:first-child {
 
 summary {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 p {
@@ -130,6 +130,7 @@ p {
         margin-bottom: 10px;
     }
 }
+
 
 
 
