@@ -62,36 +62,63 @@ p{
     font-size: small;
 }
 
-/* 🔥 Mobile styles */
+/* 🔥 Better Mobile Styles */
 @media (max-width: 768px) {
 
-    h2 {
-        font-size: 18px;
+    .timetable-container {
+        padding: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 12px;
     }
 
     th, td {
         padding: 6px;
-        font-size: 12px;
+        text-align: left;
     }
 
-    table {
-        font-size: 12px;
+    td:first-child {
+        position: sticky;
+        left: 0;
+        background: #f0f0f0;
+        z-index: 2;
+        font-weight: bold;
     }
 }
 
 @media (max-width: 480px) {
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p, summary, li {
+        font-size: 13px;
+        line-height: 1.4;
+    }
 
     th, td {
         padding: 5px;
         font-size: 11px;
     }
 
-    h2 {
-        font-size: 16px;
+    table {
+        font-size: 11px;
     }
 
-    .timetable-container {
-        padding: 10px;
+    /* Give sections breathing room */
+    details {
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
 }
-
